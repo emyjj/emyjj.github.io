@@ -1,16 +1,50 @@
-*{
+/* RESET E BASE */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
-    background-color: lightgray;
-    color: grey;
+body {
+    background-color: #0b0b0b !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    padding-top: 90px; /* evita sobreposição do conteúdo com navbar fixa */
 }
 
-.home{
+section {
+    background: transparent !important;
+}
+
+.navbar {
+    backdrop-filter: blur(6px);
+    background-color: rgba(15, 15, 15, 0.95) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    color: white !important;
+    text-transform: uppercase;
+}
+
+.navbar-brand span {
+    color: rgba(18, 115, 241, 0.852);
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: rgba(18, 115, 241, 0.852) !important;
+}
+
+.home {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,19 +52,19 @@ body{
     flex-wrap: wrap;
 }
 
-.home-content{
+.home-content {
     max-width: 600px;
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 3rem;
-    color: grey;
+    color: white;
     margin-bottom: 16px;
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 1.5rem;
-    color: antiquewhite;
+    color: rgba(255, 255, 255, 0.756);
     margin-bottom: 20px;
 }
 
@@ -46,109 +80,159 @@ body{
     margin-bottom: 30px;
 }
 
-.social-media a{
+.social-media a {
     font-size: 2rem;
     color: white;
     transition: color 0.3s ease;
 }
 
-.social-media a:hover{
-    color: rgb(184, 146, 255);
+.social-media a:hover {
+    color: rgba(18, 115, 241, 0.852);
 }
 
 .btn {
     display: inline-block;
     padding: 12px 25px;
-    background-color:rgb(184, 146, 255);
-    color: aliceblue;
+    background-color: rgba(18, 115, 241, 0.852) !important;
+    color: white !important;
     text-decoration: none;
     border-radius: 20px;
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
-.btn hover{
-    background-color: rgb(184, 146, 255);
+.btn:hover {
+    background-color: rgba(5, 43, 93, 0.852) !important;
 }
 
-.home-img{
+.home-img {
     max-width: 400px;
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
-.home-img img{
+.home-img img {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 10px 25px black;
 }
 
-@media(max-width:900px){
-    .home{
+@media (max-width: 900px) {
+    .home {
         flex-direction: column-reverse;
         padding: 50px 5%;
         text-align: center;
     }
 
-    .home-content{
+    .home-content {
         max-width: 100%;
     }
 
-    .social-media{
+    .social-media {
         justify-content: center;
     }
 
-    .home-img{
+    .home-img {
         margin-bottom: 30px;
     }
 }
 
-.projetos {
-  text-align: center;
-  padding: 60px 10%;
+.services {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: rgba(15, 15, 15, 0.95);
 }
 
-.projetos h2 {
-  font-size: 2rem;
-  color: rgb(90, 90, 90);
-  margin-bottom: 40px;
+.services .heading {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 50px;
 }
 
-
-.grid-projetos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  justify-items: center;
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
 }
 
-
-.projeto {
-  width: 100%;
-  max-width: 250px;
-  border: 2px solid rgb(184, 146, 255);
-  background-color: rgba(175, 165, 165, 0.5);
-  border-radius: 15px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.service-box {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 15px;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.projeto:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+.service-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
-.projeto h3 {
-  font-size: 1.1rem;
-  color: rgb(35, 28, 48);
-  margin-bottom: 10px;
+.service-box i {
+    font-size: 3rem;
+    color: rgba(18, 115, 241, 0.852);
+    margin-bottom: 20px;
 }
 
-.projeto p {
-  font-size: 0.9rem;
-  color: #333;
-  line-height: 1.4;
+.service-box h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
+
+.service-box p {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* SEÇÃO DE HABILIDADES APRIMORADA */
+.skills-section {
+    background-color: rgba(15, 15, 15, 0.95);
+    padding: 80px 10%;
+}
+
+.skills-section h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.skill-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.skill-box h5 {
+    color: white;
+    font-weight: 600;
+}
+
+.skill-box p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.skill-box .progress {
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-box .progress-bar {
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 8px;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
