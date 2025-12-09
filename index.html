@@ -5,66 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - Emylly Jannuzzi</title>
-
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#home">
-            Emylly<span class="text-primary"> Jannuzzi</span>
+                Emylly<span class="text-primary"> Jannuzzi</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class='bx bx-menu fs-1 text-light'></i>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Serviços</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Habilidades</a>
-                </li>                
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contato</a>
-                </li>
 
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bx bx-menu fs-1 text-light"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="btn btn-outline-light ms-3">
+                            <i id="theme-icon" class="bx bx-moon"></i>
+                        </button>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
     <section class="home" id="home">
         <div class="home-content">
-
             <h1>Emylly Jannuzzi</h1>
-            <h3>Sou uma programadora iniciante</h3>
+            <h3>Sou uma <span id="typing"></span></h3>
 
             <p>
                 Olá! Sou Emylly, estudante do IFPR no curso de Análise e Desenvolvimento de Sistemas. Estou explorando o universo da programação com Java, HTML e CSS, e este portfólio é o espaço onde compartilho minhas experiências, aprendizados e projetos que mostram minha evolução como desenvolvedora.
-
             </p>
 
             <div class="social-media">
-
-                <a href="https://github.com/emyjj" target="_blank">
-                <i class="bx bxl-github"></i>
-                </a>
-
-                <a href="https://www.instagram.com/emyjnz/?__d=1%3F%2F" target="_blank">
-                <i class="bx bxl-instagram-alt"></i>
-                </a>
+                <a href="https://github.com/emyjj" target="_blank"><i class="bx bxl-github"></i></a>
+                <a href="https://www.instagram.com/emyjnz/?__d=1%3F%2F" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
             </div>
 
-            <a href="img/Currículo - Emylly Jannuzzi Jaques Rosa-3.pdf" class="btn" download="img/Currículo - Emylly Jannuzzi Jaques Rosa-3.pdf">Download</a>
+            <a href="img/Currículo - Emylly Jannuzzi Jaques Rosa-3.pdf" class="btn" download="Currículo.pdf">Download</a>
         </div>
 
         <div class="home-img">
@@ -72,86 +66,130 @@
         </div>
     </section>
 
-        <section class="services" id="services">
+    <section class="services" id="services">
         <h2 class="heading">Serviços de Programação</h2>
 
         <div class="services-container">
             <div class="service-box">
-                <i class='bx bx-code-alt'></i>
+                <i class="bx bx-code-alt"></i>
                 <h3>Desenvolvimento Web</h3>
                 <p>Criação de sites modernos, responsivos e otimizados com foco em performance e experiência do usuário.</p>
             </div>
 
             <div class="service-box">
-                <i class='bx bxl-react'></i>
+                <i class="bx bxl-react"></i>
                 <h3>Aplicações Front-End</h3>
                 <p>Transformo ideias em páginas reais usando HTML, CSS e JavaScript.</p>
             </div>
 
             <div class="service-box">
-                <i class='bx bx-server'></i>
+                <i class="bx bx-server"></i>
                 <h3>Integração com Banco de Dados</h3>
                 <p>Conexão entre front-end e bancos de dados como MySQL, garantindo segurança e agilidade nas aplicações.</p>
             </div>
         </div>
     </section>
 
-<section id="skills" class="skills-section py-5">
-  <div class="container">
-    <h2 class="text-center mb-5">Habilidades Técnicas</h2>
+    <section id="skills" class="skills-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Habilidades Técnicas</h2>
 
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="skill-box p-4 text-center">
-          <i class='bx bxl-html5 fs-1 text-primary mb-3'></i>
-          <h5>HTML & CSS</h5>
-          <p class="small mb-3">Criação de layouts modernos, responsivos e otimizados.</p>
-          <div class="progress">
-            <div class="progress-bar bg-primary" style="width: 95%">95%</div>
-          </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-box p-4 text-center">
+                        <i class="bx bxl-html5 fs-1 text-primary mb-3"></i>
+                        <h5>HTML & CSS</h5>
+                        <p class="small mb-3">Criação de layouts modernos, responsivos e otimizados.</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 95%">95%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-box p-4 text-center">
+                        <i class="bx bxl-javascript fs-1 text-warning mb-3"></i>
+                        <h5>JavaScript</h5>
+                        <p class="small mb-3">Interatividade avançada.</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width: 85%">85%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-box p-4 text-center">
+                        <i class="bx bxl-bootstrap fs-1 text-info mb-3"></i>
+                        <h5>Bootstrap</h5>
+                        <p class="small mb-3">Uso de componentes e grid responsivo com estilo limpo.</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" style="width: 90%">90%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-box p-4 text-center">
+                        <i class="bx bx-server fs-1 text-light mb-3"></i>
+                        <h5>Back-End</h5>
+                        <p class="small mb-3">Integração com bancos de dados.</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-light text-dark" style="width: 70%">70%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="skill-box p-4 text-center">
-          <i class='bx bxl-javascript fs-1 text-warning mb-3'></i>
-          <h5>JavaScript</h5>
-          <p class="small mb-3">Interatividade avançada.</p>
-          <div class="progress">
-            <div class="progress-bar bg-warning" style="width: 85%">85%</div>
-          </div>
-        </div>
-      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="skill-box p-4 text-center">
-          <i class='bx bxl-bootstrap fs-1 text-info mb-3'></i>
-          <h5>Bootstrap</h5>
-          <p class="small mb-3">Uso de componentes e grid responsivo com estilo limpo.</p>
-          <div class="progress">
-            <div class="progress-bar bg-info" style="width: 90%">90%</div>
-          </div>
-        </div>
-      </div>
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        const icon = document.getElementById('theme-icon');
 
-      <div class="col-md-6 col-lg-4">
-        <div class="skill-box p-4 text-center">
-          <i class='bx bx-server fs-1 text-light mb-3'></i>
-          <h5>Back-End</h5>
-          <p class="small mb-3">Integração com bancos de dados.</p>
-          <div class="progress">
-            <div class="progress-bar bg-light text-dark" style="width: 70%">70%</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
 
-      </button>
-    </div>
-  </div>
-</section>
+            if (document.body.classList.contains('dark-theme')) {
+                icon.classList.remove('bx-moon');
+                icon.classList.add('bx-sun');
+            } else {
+                icon.classList.remove('bx-sun');
+                icon.classList.add('bx-moon');
+            }
+        });
+    </script>
+
+    <script>
+        const textos = ["programadora iniciante", "desenvolvedora Front-End", "estudante de TADS"];
+        let i = 0;
+        let j = 0;
+        let apagando = false;
+        const speed = 70;
+
+        function animar() {
+            const elemento = document.getElementById("typing");
+
+            if (!apagando) {
+                elemento.textContent = textos[i].slice(0, j++);
+                if (j > textos[i].length) {
+                    apagando = true;
+                    setTimeout(animar, 1000);
+                    return;
+                }
+            } else {
+                elemento.textContent = textos[i].slice(0, j--);
+                if (j === 0) {
+                    apagando = false;
+                    i = (i + 1) % textos.length;
+                }
+            }
+            setTimeout(animar, speed);
+        }
+
+        animar();
+    </script>
 
 </body>
 </html>
